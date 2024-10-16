@@ -24,10 +24,11 @@ body {
     padding: 20px;
 }
 
-.container-calculadora > input {
+.container-calculadora > #visor {
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .container-calculadora > .container-btns {
@@ -38,7 +39,7 @@ body {
     height: 300px;
 }
 
-.container-calculadora > .container-btns > div {
+.container-calculadora > .container-btns > button {
     border: 2px solid gray;
     background-color: #575757;
     font-size: 1.5em;
@@ -54,4 +55,9 @@ body {
 .container-btns > .igual {
     grid-row: 4 / 6;
     grid-column: 4 / 5;
+}
+
+.container-btns > button:hover {
+    background-color: #cacaca;
+    cursor: pointer;
 }
