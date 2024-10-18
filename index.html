@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link
+      rel="shortcut icon"
+      href="imagens/favicon/favicon.png"
+      type="image/x-icon"
+    />
     <title>Calculadora Js</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Video que me ajudou: https://www.youtube.com/watch?v=42TShjXR0m0 -->
 
     <div class="container-calculadora">
+      <h1>Calculadora Js</h1>
 
-        <h1>Calculadora Js</h1>
+      <p id="resultado"></p>
 
-        <div id="visor"></div>
+      <div class="container-btns">
+        <!-- Linha 1 -->
 
-        <div class="container-btns">
+        <button class="apagar-tudo" onclick="clean()">C</button>
 
-            <!-- Linha 1 -->
+        <button class="apagar-um" onclick="back()">&lt;</button>
 
-            <button class="apagar-tudo">C</button>
+        <button class="divisao" onclick="inserir('/')">/</button>
 
-            <button class="apagar-um">&lt;</button>
+        <button class="multiplicacao" onclick="inserir('*')">X</button>
 
-            <button class="divisao">/</button>
+        <!-- Linha 2 -->
 
-            <button class="multiplicacao">X</button>
+        <button class="num7" onclick="inserir('7')">7</button>
 
-            <!-- Linha 1 -->
+        <button class="num8" onclick="inserir('8')">8</button>
 
-            <!-- Linha 2 -->
+        <button class="num9" onclick="inserir('9')">9</button>
 
-            <button class="num7" onclick="num7()">7</button>
+        <button class="menos" onclick="inserir('-')">-</button>
 
-            <button class="num8">8</button>
+        <!-- Linha 3 -->
 
-            <button class="num9">9</button>
+        <button class="num4" onclick="inserir('4')">4</button>
 
-            <button class="menos">-</button>
+        <button class="num5" onclick="inserir('5')">5</button>
 
-            <!-- Linha 3 -->
+        <button class="num6" onclick="inserir('6')">6</button>
 
-            <button class="num4">4</button>
+        <button class="mais" onclick="inserir('+')">+</button>
 
-            <button class="num5">5</button>
+        <!-- Linha 4 -->
 
-            <button class="num6">6</button>
+        <button class="num1" onclick="inserir('1')">1</button>
 
-            <button class="mais">+</button>
+        <button class="num2" onclick="inserir('2')">2</button>
 
-            <!-- Linha 4 -->
+        <button class="num3" onclick="inserir('3')">3</button>
 
-            <button class="num1">1</button>
+        <button class="igual" onclick="calcular()">=</button>
 
-            <button class="num2">2</button>
+        <!-- Linha 5 -->
 
-            <button class="num3">3</button>
+        <button class="num0" onclick="inserir('0')">0</button>
 
-            <button class="igual">=</button>
-
-            <!-- Linha 5 -->
-
-            <button class="num0">0</button>
-
-            <button class="ponto">.</button>
-
-        </div>
-
+        <button class="ponto" onclick="inserir('.')">.</button>
+      </div>
     </div>
 
     <script src="scripts/app.js"></script>
-
-</body>
+  </body>
 </html>
